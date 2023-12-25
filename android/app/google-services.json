@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "955466677534",
+    "project_id": "notification-8c482",
+    "storage_bucket": "notification-8c482.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955466677534:android:48997b9cdb11e23ed71d0f",
+        "android_client_info": {
+          "package_name": "com.broadwayinfosys.notification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXjXSBcg6rc3YJlkfOP-NaYkTx2r8wMKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
