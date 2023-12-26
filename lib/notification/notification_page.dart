@@ -11,10 +11,10 @@ class _NotificationPageState extends State<NotificationPage> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar:  AppBar(),
+      appBar:  AppBar(title: Text('Notification'),),
       body: ListView(
         children: const [
-          Text('Hi  How are uh ')
+          Center(child: Text('Hi  How are uh '))
         ],
 
       ),

@@ -1,11 +1,16 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:notification/esewa/esewa_app.dart';
+import 'package:notification/firebase_options.dart';
 import 'package:notification/notification/notification_page.dart';
 
 Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
 
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp(
+    options : DefaultFirebaseOptions.currentPlatform
+  );
 
 
 
@@ -21,12 +26,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-     home: const NotificationPage(),
+     // home: const NotificationPage(),
+     home: const EsewaApp(title: 'Esewa Login'),
     );
   }
 }
