@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notification/login/login_page.dart';
 
 class NotificationPage extends StatefulWidget {
   const NotificationPage({super.key});
@@ -10,13 +11,12 @@ class NotificationPage extends StatefulWidget {
 class _NotificationPageState extends State<NotificationPage> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      appBar:  AppBar(title: Text('Notification'),),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Notification'),
+      ),
       body: ListView(
-        children: const [
-          Center(child: Text('Hi  How are uh '))
-        ],
-
+        children: const [Center(child: Text('Hi  How are uh '))],
       ),
     );
   }
