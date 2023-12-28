@@ -9,13 +9,10 @@ import 'package:notification/login/login_page.dart';
 import 'package:notification/notification/notification_page.dart';
 
 Future<void> main() async {
-
   WidgetsFlutterBinding.ensureInitialized();
 
-  await Firebase.initializeApp(
-    options : DefaultFirebaseOptions.currentPlatform
-  );
-  // print("Error initalizing firebase: $e");
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  print("Error initalizing firebase: $e");
 
   runApp(const MyApp());
 }
@@ -30,20 +27,14 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-     // home: const NotificationPage(),
+      // home: const NotificationPage(),
       home: SignInWithFacebook(),
-
-
-
-
 
 //  home: const LoginPage(),
 // home: const EsewaApp(title: 'Esewa Login'),
-);
+    );
+  }
 }
-}
-
