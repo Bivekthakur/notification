@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:notification/esewa/esewa_app.dart';
 import 'package:notification/facebook/signIn_with_facebook.dart';
+import 'package:notification/feature/crashanalytics/crashanalytics.dart';
 import 'package:notification/firebase_options.dart';
 import 'package:notification/login/login_page.dart';
 import 'package:notification/notification/notification_page.dart';
@@ -13,7 +14,7 @@ Future<void> main() async {
 
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   print("Error initalizing firebase: $e");
-
+   HandleCrashAnalytics.handleCrashAnalytics();
   runApp(const MyApp());
 }
 
